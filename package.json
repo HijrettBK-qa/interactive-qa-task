@@ -1,0 +1,23 @@
+{
+  "name": "interactive-qa-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HijrettBK-qa/interactive-qa-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HijrettBK-qa/interactive-qa-task/issues"
+  },
+  "homepage": "https://github.com/HijrettBK-qa/interactive-qa-task#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.17"
+  }
+}

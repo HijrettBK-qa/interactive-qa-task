@@ -1,4 +1,4 @@
-import { Page, expect } from "@playwright/test";
+import { Locator, Page, expect } from "@playwright/test";
 
 export default class LoginPage {
 
@@ -11,7 +11,15 @@ export default class LoginPage {
 
     async goToLogin(){ await this.page.goto("https://automationexercise.com/login")};
     async loggedInPage(){await this.page.goto("https://automationexercise.com/")};
-    async consentBtn(){await this.page.getByRole('button', { name: 'Consent' }).click();}
+    consentBtn = (): Locator => this.page.getByRole('button', { name: 'Consent' });
+    async consentBtnClick(){
+        if(await this.consentBtn().isVisible()){
+            this.consentBtn().click();
+        }else{
+            console.log("There is no 'consent' button to click! ")
+        }  
+        
+}
     async fillEmail(email){ await this.page.getByTestId("login-email").fill(email)};
     async fillPassword(password){await this.page.getByTestId("login-password").fill(password)};
     async loginBtn(){ await this.page.getByTestId("login-button").click()}

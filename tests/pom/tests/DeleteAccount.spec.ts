@@ -44,8 +44,4 @@ test("Delete the account",async({product,signup,login})=>{
     await login.loginBtn();
     await product.verifyNoAccount();
 
-
-
-
-
 })

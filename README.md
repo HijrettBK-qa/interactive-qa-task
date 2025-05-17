@@ -23,10 +23,6 @@ npx playwright install
 
 npx playwright test
 
-**Running the Code Generator**
-
-npx playwright codegen
-
 **Running the Tests in VS Code**
 
 The Playwright team has released a VS Code Extension that allows you to debug tests easily with the click or right click of a button.
